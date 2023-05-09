@@ -53,7 +53,7 @@ function init() {
   inquirer.prompt(questions).then((answers) => {
     const data = generateSVG(answers);
     fs.writeFileSync('logo.svg', data);
-    console.log('Logo created!');
+    console.log('Logo has been created!');
   });
 }
 
